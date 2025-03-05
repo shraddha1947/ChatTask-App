@@ -1,11 +1,9 @@
-.layout{
+.layout {
   width: 89%;
   height: auto;
   margin-top: 70px;
   border: none;
   margin-left: 400px;
-  
-
 }
 
 .main-heading {
@@ -20,9 +18,9 @@
 
 .row {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  gap: 120px; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
   padding: 20px;
   width: 1720px;
   margin-left: 400px;
@@ -30,8 +28,8 @@
 
 .item {
   display: flex;
-  align-items: center; 
-  width: 470px; 
+  align-items: center;
+  width: 470px;
   border: none;
   padding: 15px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -40,16 +38,16 @@
 }
 
 .item img {
-  width: 70px; 
-  height: 70px; 
-  margin-right: 15px; 
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
 }
 
 .first-heading,
 .second-heading,
 .third-heading {
   flex: 1;
-  line-height: 1.8; 
+  line-height: 1.8;
   margin-bottom: 10px;
 }
 
@@ -64,7 +62,6 @@
 
 .first-heading p,
 .second-heading p,
-  .third-heading p {
-    color: #666;
+.third-heading p {
+  color: #666;
 }
-

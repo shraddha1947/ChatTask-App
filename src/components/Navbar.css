@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -84,4 +84,130 @@ body {
 .login-btn {
   background-color: white;
   color: black;
+} */
+
+
+
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: lightslategray;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Navbar Dark Mode */
+.dark-mode {
+  background-color: rgb(15, 2, 25);
+  color: white;
+}
+
+.navbar.dark {
+  background-color: rgb(15, 2, 25);
+}
+
+/* Left Section */
+.nav-left .app-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Center Navigation Links */
+.nav-center {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-center a:hover {
+  color: lightblue;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+}
+
+.dark-mode-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Login Button */
+.login-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  width: 150px;
+}
+
+.login-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-center {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgb(15, 2, 25);
+    text-align: center;
+    padding: 15px;
+  }
+
+  .nav-center.open {
+    display: flex;
+  }
+
+  .nav-center a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
 }

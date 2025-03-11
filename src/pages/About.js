@@ -8,12 +8,10 @@ import about3 from "../assets/about3.png";
 const About = () => {
   return (
     <div className="about-page">
-      {/* Hero Section */}
       <div className="hero-section">
         <img src={aboutus} alt="about-us" />
       </div>
 
-      {/* Section 1 - Image Left, Text Right */}
       <div className="about-section">
         <div className="about-image">
           <img src={about1} alt="About 1" />
@@ -27,7 +25,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Section 2 - Image Right, Text Left */}
       <div className="about-section reverse">
         <div className="about-text">
           <h2>Start selling directly inside conversions</h2>
@@ -42,7 +39,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Section 3 - Image Left, Text Right */}
       <div className="about-section">
         <div className="about-image">
           <img src={about3} alt="About 3" />

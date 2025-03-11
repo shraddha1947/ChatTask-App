@@ -5,7 +5,6 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
-    /* Hero Section */
     .hero-section img {
       width: 100%;
       height: auto;
@@ -14,7 +13,6 @@
       margin-top: 90px;
     }
 
-    /* Common About Section */
     .about-section {
       display: flex;
       align-items: center;
@@ -24,7 +22,7 @@
       flex-wrap: wrap;
     }
 
-    /* Text Container */
+
     .about-text {
       flex: 1;
       min-width: 280px;
@@ -43,7 +41,7 @@
       color: #777
     }
 
-    /* Image Container */
+
     .about-image {
       flex: 1;
       min-width: 280px;
@@ -58,14 +56,14 @@
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     }
 
-    /* Reverse Section */
+
     .about-section.reverse {
       flex-direction: row-reverse;
     }
 
 
 
-    /* Responsive Styling */
+
     @media (max-width: 1024px) {
       .about-section {
         flex-direction: column;
@@ -112,5 +110,4 @@
       .about-section {
         padding: 30px 15px;
       }
-
     }

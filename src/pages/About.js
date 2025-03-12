@@ -4,6 +4,7 @@ import aboutus from "../assets/aboutus.png";
 import about1 from "../assets/about1.png";
 import about2 from "../assets/about2.png";
 import about3 from "../assets/about3.png";
+import aboutlast from "../assets/aboutlast.png";
 
 const About = () => {
   return (
@@ -50,6 +51,9 @@ const About = () => {
             visitors than any website. With lots of unique blocks easily build a
             page. There are many variations of passages of available.
           </p>
+        </div>
+        <div className="hero-section">
+          <img src={aboutlast} alt="about-last" />
         </div>
       </div>
     </div>

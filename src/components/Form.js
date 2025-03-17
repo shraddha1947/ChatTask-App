@@ -1,4 +1,3 @@
-// src/components/Form.js
 import React from "react";
 import "./Form.css";
 import { FaRegUser } from "react-icons/fa";

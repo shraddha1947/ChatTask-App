@@ -5,6 +5,7 @@ import { IoChatbubblesOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import Form from "../components/Form";
+import FAQ from "../components/FAQ";
 
 const Contact = () => {
   return (
@@ -41,6 +42,7 @@ const Contact = () => {
         </div>
       </div>
       <Form />
+      <FAQ />
     </div>
   );
 };

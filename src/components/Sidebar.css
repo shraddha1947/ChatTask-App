@@ -1,0 +1,103 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 87vh;
+  width: 80px;
+  background-color: #1e1e2f;
+  color: white;
+  padding: 0px 0;
+  position: fixed;
+  left: 60px;
+  top: 85px;
+  z-index: 10;
+}
+
+.sidebar-top,
+.sidebar-middle,
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar-middle {
+  color: #888;
+}
+
+.sidebar-bottom {
+  margin-top: 20px;
+}
+
+.profile-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 70px;
+    left: 20px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+
+  .profile-icon {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    left: 10px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .profile-icon {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 50px;
+    top: 70px;
+    left: 5px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .profile-icon {
+    font-size: 30px;
+  }
+
+  .sidebar-top,
+  .sidebar-middle,
+  .sidebar-bottom {
+    gap: 20px;
+  }
+}

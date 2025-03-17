@@ -1,33 +1,120 @@
-/* Contact Page Container */
-.contact-page {
-  width: 100%;
-  min-height: 100vh;
-  padding: 80px 20px;
-
+.chat-page {
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+}
+
+.chat-list-container {
+  margin-left: 140px;
+  flex: 1;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.chat-list-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  width: 480px;
 }
 
-/* Heading */
-.contact-page h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: white
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.search-icon {
+  color: #999;
+}
+
+.plus-icon {
+  font-size: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+  color: #555;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 480px;
+}
+
+.chat-item:hover {
+  background-color: #333;
+}
+
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.chat-details {
+  flex: 1;
+}
+
+.chat-name-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-name {
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+.chat-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.chat-message {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
 }
 
 
-
-/* Responsive Text Adjustments */
 @media (max-width: 768px) {
-  .contact-page h1 {
-    font-size: 2rem;
+  .sidebar {
+    width: 60px;
+    left: 10px;
   }
 
-  .contact-page p {
-    font-size: 1rem;
+  .chat-list-container {
+    margin-left: 80px;
+    padding: 10px;
+  }
+
+  .search-bar input {
+    font-size: 12px;
+  }
+
+  .plus-icon {
+    font-size: 18px;
   }
 }
